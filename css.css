@@ -1,0 +1,524 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.container {
+	width: 90%;
+
+	display: flex;
+
+}
+.header_container {
+	width: 100%;
+	background-color: rgba(16, 128, 234, 0.7);
+	justify-content: space-between;
+}
+
+.logo {
+	height: 90px;
+	width: 15%;
+	/* background-color: yellow; */
+	font-size: 40px;
+	font-family: segoe UI;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	line-height: 90px;
+}
+
+.nav {
+	height: 90px;
+	width: 35%;
+	/* background-color: green; */
+	display: flex;
+
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.nav-item {
+	width: 19%;
+	height: 90px;
+	/* background-color: gray; */
+	font-family: segoe UI;
+	font-size: large;
+	text-align: center;
+	line-height: 90px;
+	color: white;
+	cursor: pointer;
+	transition: .4s;
+}
+
+.nav-item:hover {
+	background-color: rgba(16, 128, 234, 0.7);
+	color: white;
+
+}
+
+/* css for banner  */
+
+.banner {
+	height: 95vh;
+	width: 100%;
+	background-color: whitesmoke;
+	background-size: cover;
+	/* background-image: url('./Media/pexels-stan-swinnen-6465964.jpg'); */
+
+}
+
+.video-container {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.video-container video {
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+.video-container .caption {
+	z-index: 1;
+	position: relative;
+	text-align: center;
+	color: #dc0000;
+	padding: 10px;
+}
+
+.overlay {
+	height: 95vh;
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+}
+
+.banner_text {
+	height: 350px;
+	width: 50%;
+	background-color: rgba(16, 128, 234, 0.7);
+	font-family: segoe UI;
+	display: flex;
+	align-items: center;
+	color: white;
+}
+
+.banner_title {
+	font-size: 50px;
+	margin-bottom: 15px;
+
+}
+
+.banner_desc {
+	margin-bottom: 30px;
+}
+
+.padd {
+	padding: 50px;
+	/* background-color: red; */
+}
+
+.banner_btn {
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-transform: uppercase;
+	background-color: transparent;
+	color: white;
+	font-weight: bold;
+	font-family: segoe ui;
+	border: 3px solid white;
+	cursor: pointer;
+	transition: .4s;
+}
+
+.banner_btn:hover {
+	background-color: white;
+	color: rgba(16, 128, 234, 1);
+}
+
+/* css for services  */
+
+.services {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #e6e6e6;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-family: segoe UI;
+}
+
+.services_container {
+	margin-top: 50px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.service {
+	height: 400px;
+	width: 47%;
+	background-color: white;
+	display: flex;
+	margin-top: 20px;
+}
+
+
+.service_img {
+	width: 40%;
+	height: 400px;
+	/* background-color: red; */
+	display: flex;
+	overflow: hidden;
+}
+
+.service_details {
+	width: 60%;
+	height: 400px;
+	/* background-color: green; */
+	display: flex;
+	align-items: center;
+}
+
+.service_padd {
+	padding: 20px;
+}
+
+
+.service_btn {
+
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-transform: uppercase;
+	background-color: rgba(16, 128, 234, 1);
+	color: white;
+	font-weight: bold;
+	font-family: segoe ui;
+	border: none;
+	cursor: pointer;
+	transition: .4s;
+
+}
+
+.service_title {
+	margin-bottom: 15px;
+}
+
+.service_desc {
+	margin-bottom: 30px;
+}
+
+/* css for about  */
+
+.about {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 100%;
+	/* background-color: gray; */
+	display: flex;
+	flex-direction: column;
+	font-family: segoe UI;
+	align-items: center;
+}
+
+.about_container {
+	margin-top: 30px;
+	/* background-color: red; */
+	line-height: 30px;
+	display: inline;
+}
+
+.start_text {
+	font-size: 40px;
+	font-weight: bold;
+	color: gray;
+}
+
+
+/* css for highlight  */
+
+.highlight {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 100%;
+	background-color: rgba(16, 128, 234, 1);
+	display: flex;
+	justify-content: center;
+}
+
+.highlight_container {
+	justify-content: space-between;
+}
+
+
+.high_ele {
+	width: 22%;
+	height: 230px;
+	background-color: rgba(0, 0, 0, .4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Segoe UI;
+	text-align: center;
+	color: white;
+}
+
+
+.high_title {
+	font-size: 60px;
+}
+
+.high_desc {
+	font-size: 25px;
+}
+
+/* css for galley  */
+.portfolio {
+	/* padding-top: 50px; */
+	/* padding-bottom: 50px; */
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: #e4e4e4;
+	font-family: segoe UI;
+}
+
+.portfolio_container {
+	width: 100%;
+	flex-wrap: wrap;
+	/* margin-top: 30px; */
+}
+
+.project {
+	width: 25%;
+	height: 400px;
+	background-color: red;
+	display: flex;
+	overflow: hidden;
+}
+
+.project_1 {
+	background-image: url('./Media/pexels-s-migaj-762420.jpg');
+	background-size: cover;
+}
+
+.project_2 {
+	background-image: url('./Media/pexels-josh-hild-2422265.jpg');
+	background-size: cover;
+	align-items: flex-end;
+}
+
+.project_3 {
+	background-image: url('./Media/pexels-jeremy-bishop-2422968.jpg');
+	background-size: cover;
+}
+
+.project_4 {
+	background-image: url('./Media/pexels-dario-fernandez-ruz-6421594.jpg');
+	background-size: cover;
+	align-items: flex-end;
+}
+
+.project_5 {
+	background-image: url('./Media/pexels-kamaji-ogino-5064664.jpg');
+	background-size: cover;
+}
+
+.project_6 {
+	background-image: url('./Media/pexels-aleksey-kuprikov-3551191.jpg');
+	background-size: cover;
+	align-items: flex-end;
+}
+
+.project_7 {
+	background-image: url('./Media/pexels-josh-willink-701016.jpg');
+	background-size: cover;
+}
+
+.project_8 {
+	background-image: url('./Media/pexels-eric-sanman-1365425.jpg');
+	background-size: cover;
+	align-items: flex-end;
+}
+
+.project_title {
+	color: white;
+	width: 100%;
+	height: 150px;
+	text-indent: 30px;
+	line-height: 200px;
+	background-color: rgba(16, 128, 234, .5);
+	cursor: pointer;
+	transition: .4s;
+}
+
+
+.project_title:hover {
+	height: 400px;
+}
+
+/* css for footer  */
+
+.footer {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #353535;
+	display: flex;
+	justify-content: center;
+}
+
+
+.footer_child {
+	height: 300px;
+	width: 25%;
+	/* background-color: gray; */
+	font-family: segoe UI;
+	display: flex;
+	justify-content: center;
+
+}
+
+.footer_child_1 {
+	align-items: center;
+	color: white;
+	font-size: 30px;
+}
+
+ul {
+	margin-top: 40px;
+}
+
+li {
+	list-style-type: none;
+	margin-bottom: 10px;
+	color: white;
+}
+
+.first {
+	font-size: 22px;
+}
+
+
+.footer_child_4 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.social_container {
+	width: 60%;
+	justify-content: space-between;
+}
+
+.social_icon {
+	height: 30px;
+	width: 30px;
+	/* background-color: white; */
+	background-size: cover;
+}
+
+
+.si1 {
+	background-image: url('./Media/facebook.png');
+}
+
+.si2 {
+	background-image: url('./Media/google.png');
+}
+
+.si3 {
+	background-image: url('./Media/linkedin.png');
+}
+
+.si4 {
+	background-image: url('./Media/instagram.png');
+}
+
+
+
+#form {
+	position: relative;
+	width: 500px;
+	margin: 50px auto 100px auto;
+
+}
+
+input {
+	font-family: 'Lato', sans-serif;
+	font-size: 0.875em;
+	width: 470px;
+	height: 50px;
+	padding: 0px 15px 0px 15px;
+	background-color: white;
+
+	outline: none;
+	color: #817272;
+
+	border: solid 1px #8f8781;
+	border-bottom: none;
+
+}
+
+input:hover {
+	background: #160f0b;
+	color: #f3efec;
+}
+
+textarea {
+	width: 470px;
+	max-width: 470px;
+	height: 110px;
+	max-height: 110px;
+	padding: 15px;
+	background-color: white;
+
+	outline: none;
+
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	font-size: 0.875em;
+
+	border: solid 1px #b3aca7;
+
+}
+
+textarea:hover {
+	background: #0f0905;
+	color: #e2dedb;
+}
+
+#submit {
+	width: 502px;
+
+	padding: 0;
+	margin: -5px 0px 0px 0px;
+
+	font-family: 'Lato', sans-serif;
+	font-size: 0.875em;
+	color: #7c6759;
+	background-color: white;
+	outline: none;
+	cursor: pointer;
+
+	border: solid 1px #b3aca7;
+	border-top: none;
+}
+
+#submit:hover {
+	color: #f3efed;
+	background-color: #0f0905;
+}
