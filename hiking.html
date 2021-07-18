@@ -4,11 +4,64 @@
 <head>
 	<meta charset="utf-8">
 	<title>Ritik Dongre</title>
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css.css">
+	<link rel="stylesheet" type="text/css" href="test.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<style type="text/css">
+  .primary-background{
+  
+  background: rgba(16, 128, 234, 0.7) !important;
+  
+}
+
+</style>
 </head>
 
 <body>
-	<div class="header" id="header">
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark primary-background py-0">
+  			<div class="logo">
+				<a href = "index.html">HIKING</a>
+			</div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active px-2">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item px-2">
+        <a class="nav-link" href="#services">Service</a>
+      </li>
+      <li class="nav-item px-2">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item px-2">
+        <a class="nav-link" href="#gallery">Gallery</a>
+      </li>
+      <li class="nav-item px-2">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+
+
+	<!-- <div class="header" id="header">
 		<div class="container header_container">
 			<div class="logo">
 				<a href = "index.html">HIKING</a>
@@ -21,10 +74,10 @@
 				<div class="nav-item"><a href="#contact">Contact</a></div>
 			</div>
 	</div>
-	</div>
+	</div> -->
 	<!-- banner   -->
 	<div class="banner">
-		<div class="video-container">
+		<div class="video-cont">
 			<video autoplay muted loop>
 				<source src="./Media/Pexels Videos 2040076.mp4" type="video/mp4" />
 			</video>
@@ -50,7 +103,7 @@
 
 		<div class="services" id="services">
 			<h1>What We Do</h1>
-			<div class="container services_container">
+			<div class="cont services_cont">
 
 				<div class="service">
 					<div class="service_img">
@@ -150,7 +203,7 @@
 
 		<div class="about" id="about">
 			<h1>About Us</h1>
-			<div class="container about_container">
+			<div class="cont about_cont">
 				<span class="start_text">Lorem</span> ipsum dolor, sit amet consectetur adipisicing elit. Sequi a
 				deleniti
 				aperiam neque assumenda nisi animi nesciunt soluta nihil, quaerat vel maxime, cum quae. In nemo quia
@@ -173,7 +226,7 @@
 		</div>
 		<!-- highlight  -->
 		<div class="highlight">
-			<div class="container highlight_container">
+			<div class="cont highlight_cont">
 				<div class="high_ele">
 					<div class="high_ele_child">
 						<h1 class="high_title">50+</h1>
@@ -203,7 +256,7 @@
 
 		<!-- css for portfolio  -->
 		<div class="portfolio" id = "gallery">
-			<div class="container portfolio_container">
+			<div class="cont portfolio_cont">
 				<div class="project project_1">
 					<div class="project_title">
 						<h1>Snow Hiking</h1>
@@ -246,38 +299,66 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="footer" id = "contact">
-			<div class="container footer_container">
-				<div class="footer_child footer_child_1">
-					<h1 class="footer_logo">HIKING </h1>
-
-
-				</div>
-
-
-
-				<form id="form" class="topBefore">
-					<h2 align="center" style=" font-size: 2rem; font-family: sans-serif;color:whitesmoke;">Contact Us</h2><br>
-					<input id="name" type="text" placeholder="NAME">
-					<input id="email" type="text" placeholder="E-MAIL">
-					<textarea id="message" type="text" placeholder="MESSAGE"></textarea>
-					<input id="submit" type="submit" value="GO!">
-				</form>
-
-			
-				<div class="footer_child footer_child_4">
-					<div class="container social_container">
-						<div class="social_icon si1"></div>
-						<div class="social_icon si2"></div>
-						<div class="social_icon si3"></div>
-						<div class="social_icon si4"></div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
+<!-- Footer -->
+		<div class="container-fluid bg-dark text-white" >
+    <div class="card mx-5 bg-dark text-white">
+        <div class="row mb-4 ">
+            <div class="col-md-4 col-sm-11 col-xs-11">
+                <div class="footer-text pull-left">
+                    <div class="d-flex">
+                        <h1 style="color: white;">HIKING</h1>
+                    </div>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi non pariatur numquam animi nam at impedit odit nisi.</p>
+                    <div class="social mt-2 mb-3"> <i class="fa fa-facebook-official fa-lg"></i> <i class="fa fa-instagram fa-lg"></i> <i class="fa fa-twitter fa-lg"></i> <i class="fa fa-linkedin-square fa-lg"></i> <i class="fa fa-facebook"></i> </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-1 col-xs-1 mb-2"></div>
+            <div class="col-md-2 col-sm-4 col-xs-4">
+                <!-- <h5 class="heading">Company</h5>
+                <ul class="card-text">
+                    <li>About Us</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                    <li>Join Us</li>
+                </ul> -->
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-4">
+                <h5 class="heading">Services</h5>
+                <ul>
+                    <li>Day Hiking</li>
+                    <li>Long-Distance</li>
+                    <li>Mounteneering</li>
+                    <li>Slow Pace</li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-4">
+                <h5 class="heading">Gallery</h5>
+                <ul class="card-text">
+                    <li>Snow Hiking</li>
+                    <li>Camp Stay</li>
+                    <li>Adventure</li>
+                    <li>Chetah Library</li>
+                </ul>
+            </div>
+        </div>
+        <div class="divider mb-4"> </div>
+        <div class="row" style="font-size:10px;">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="pull-left">
+                    <p><i class="fa fa-copyright"></i> 2021 hiking</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="pull-right mr-4 d-flex policy">
+                    <div>Terms of Use</div>
+                    <div>Privacy Policy</div>
+                    <div>Cookie Policy</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
 </body>
 
 </html>
