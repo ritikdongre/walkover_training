@@ -547,4 +547,13 @@ textarea:hover {
 	height: 450px;
 	width: 100%;
 }
+.portfolio{
+	display: none;
+}
+
+.highlight {
+	display: none;
+}
+
+
 }
